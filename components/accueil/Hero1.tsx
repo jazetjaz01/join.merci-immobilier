@@ -33,15 +33,15 @@ export default function Hero1() {
           {/* Contenu textuel avec couleurs adaptées au fond Slate-300 */}
           <div className="text-center md:text-left relative z-20 max-w-lg">
             <h1 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight tracking-wide mb-6">
-              Pouvez vous estimer <br />
-              <span className="font-pinyon text-5xl md:text-7xl  font-normal ">mon bien </span> <br />
-              immobilier ?
+              Envie de rejoindre   <br />
+              <span className="font-pinyon text-5xl md:text-7xl  font-normal ">une communauté </span> <br />
+              différente dans l'immobilier ?
             </h1>
             
             <p className="text-slate-700 text-lg md:text-xl mb-8 leading-relaxed">
-              Nous vous accompagnons pour évaluer la valeur de votre bien en toute confiance.
-              <span className="block mt-4 font-semibold text-slate-800">
-                Une estimation gratuite et sans engagement en 24h
+              Avec ou sans expérience dans l'immobilier, vivez sereinement de votre activité
+              <span className="block mt-4  text-slate-800">
+                Un conseiller Merci Immobilier est à votre disposition 
               </span>
             </p>
           </div>
