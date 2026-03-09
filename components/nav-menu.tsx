@@ -16,25 +16,25 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
     <NavigationMenuList>
       <NavigationMenuItem>
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <Link href="annonces">Acheter</Link>
+          <Link href="profil">Votre profil</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       
       <NavigationMenuItem>
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <Link href="annonces">Louer</Link>
+          <Link href="entreprendre">Entreprendre</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       
       <NavigationMenuItem>
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <Link href="vendre">Vendre</Link>
+          <Link href="offre">Notre offre</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       
       <NavigationMenuItem>
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <Link href="conseiller">Devenir conseiller</Link>
+          <Link href="actualite">Actualité</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
        <NavigationMenuItem>
