@@ -1,5 +1,6 @@
 import Hero1 from "@/components/accueil/Hero1";
 import Hero2 from "@/components/accueil/Hero2";
+import Hero3 from "@/components/accueil/Hero3";
 
 
 
@@ -10,7 +11,7 @@ export default function Home() {
       <main className="flex flex-col">
         <Hero1 />
        <Hero2 />
-      
+      <Hero3 />
        
        
 
