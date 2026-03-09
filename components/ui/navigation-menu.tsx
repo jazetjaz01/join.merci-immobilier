@@ -20,7 +20,7 @@ function NavigationMenu({
       data-slot="navigation-menu"
       data-viewport={viewport}
       className={cn(
-        "group/navigation-menu relative flex max-w-max flex-1 items-center justify-center",
+        "group/navigation-menu relative flex max-w-full md:max-w-max flex-1 items-center justify-center",
         className
       )}
       {...props}
@@ -38,9 +38,9 @@ function NavigationMenuList({
   return (
     <NavigationMenuPrimitive.List
       data-slot="navigation-menu-list"
-      // On retire les sélecteurs complexes ici pour plus de simplicité
       className={cn(
-        "group flex flex-1 list-none items-center justify-center gap-0",
+        // Changement : flex-col par défaut, md:flex-row pour le bureau
+        "group flex flex-1 list-none flex-col! md:flex-row! items-center justify-center gap-0",
         className
       )}
       {...props}
@@ -55,12 +55,11 @@ function NavigationMenuItem({
   return (
     <NavigationMenuPrimitive.Item
       data-slot="navigation-menu-item"
-      // MODIFICATION : Le trait est appliqué ici sur chaque item, sauf le dernier
       className={cn(
-        "relative flex items-center justify-center",
-        // On crée le trait avec after
+        "relative flex items-center justify-center w-full md:w-auto",
+        // Le trait vertical (after) n'est affiché qu'à partir de l'écran md
         "after:absolute after:right-0 after:h-5 after:w-[1px] after:bg-black after:content-['']",
-        // On cache le trait pour le dernier élément
+        "after:hidden md:after:block",
         "last:after:hidden",
         className
       )}
@@ -70,7 +69,7 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-12 w-max items-center justify-center rounded-none bg-transparent px-6 py-2 text-base font-medium transition-colors outline-none hover:text-teal-600 focus:text-teal-600 disabled:pointer-events-none disabled:opacity-50 data-[state=open]:text-teal-600"
+  "group inline-flex h-12 w-full md:w-max items-center justify-center rounded-none bg-transparent px-6 py-2 text-base font-medium transition-colors outline-none hover:text-teal-600 focus:text-teal-600 disabled:pointer-events-none disabled:opacity-50 data-[state=open]:text-teal-600"
 )
 
 function NavigationMenuTrigger({
@@ -140,7 +139,8 @@ function NavigationMenuLink({
     <NavigationMenuPrimitive.Link
       data-slot="navigation-menu-link"
       className={cn(
-        "flex flex-col gap-1 rounded-none p-2 text-base transition-all outline-none hover:text-teal-600 focus:text-teal-600 data-[active=true]:text-teal-600 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-muted-foreground",
+        // w-full ajouté pour que le lien prenne toute la place sur mobile
+        "flex flex-col gap-1 rounded-none p-2 w-full text-base transition-all outline-none hover:text-teal-600 focus:text-teal-600 data-[active=true]:text-teal-600 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-muted-foreground",
         className
       )}
       {...props}
