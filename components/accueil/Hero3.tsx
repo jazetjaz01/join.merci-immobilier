@@ -16,24 +16,24 @@ export default function Hero3() {
             {/* Badge Expertise */}
             <div className="flex items-center gap-2  mb-4">
               <MapPin className="size-4" />
-              <span className="text-sm font-semibold uppercase tracking-wider">Expertise Locale</span>
+              <span className="text-sm font-semibold uppercase tracking-wider">Agent immobilier ou agent commercial</span>
             </div>
 
             <div className="flex flex-col leading-tight mb-8">
               <h2 className="text-3xl md:text-4xl font-medium text-slate-800">
-                Estimer mon bien
+                Relance ta carrière 
               </h2>
               <p className="text-3xl md:text-4xl font-medium text-slate-800">
-                en <span className="font-pinyon text-5xl md:text-6xl  ">agence</span>
+                dans <span className="font-pinyon text-5xl md:text-6xl  ">l'immobilier</span>
               </p>
             </div>
 
             <div className="space-y-6 text-slate-700 text-lg leading-relaxed mb-10">
               <p className="font-semibold text-slate-900">
-                Merci Immobilier étudie tous les paramètres de votre projet
+                Tu veux travailler differement à ton rythme sans pression
               </p>
               <p>
-                Nous mettons notre connaissance du marché local à votre service pour vous donner une estimation juste.
+                Tu as envie de transmettre et de créer une équipe avec toi
               </p>
             </div>
 
