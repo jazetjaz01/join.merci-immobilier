@@ -13,7 +13,7 @@ export default function Hero1() {
         {/* --- Colonne IMAGE (Gauche) --- */}
         <div className="relative h-[350px] md:h-full w-full z-0">
           <Image
-            src="/accueil/femme1.jpg" 
+            src="/accueil/accueil1.jpg" 
             alt="Vendre votre bien avec Merci Immobilier" 
             fill 
             priority 
