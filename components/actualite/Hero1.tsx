@@ -33,16 +33,14 @@ export default function Hero1() {
           {/* Contenu textuel avec couleurs adaptées au fond Slate-300 */}
           <div className="text-center md:text-left relative z-20 max-w-lg">
             <h1 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight tracking-wide mb-6">
-              Spécial étudiant une <br />
-              <span className="font-pinyon text-5xl md:text-7xl  font-normal ">offre </span> <br />
-              extraordinaire !
+             Actualité  <br />Merci Immobilier <br />
+              <span className="font-pinyon text-5xl md:text-7xl  font-normal ">Actualité </span> <br />
+              de nos agents!
             </h1>
             
             <p className="text-slate-700 text-lg md:text-xl mb-8 leading-relaxed">
-              Tu es étudiant et tu peux devenir conseiller immobilier Merci 
-              <span className="block mt-4  text-slate-800">
-                Un conseiller Merci est disponible pour te répondre
-              </span>
+              Retrouvez l'activité de notre réseau en France
+              
             </p>
           </div>
         </div>
