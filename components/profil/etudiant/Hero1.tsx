@@ -13,7 +13,7 @@ export default function Hero1() {
         {/* --- Colonne IMAGE (Gauche) --- */}
         <div className="relative h-[350px] md:h-full w-full z-0">
           <Image
-            src="/accueil/accueil1.jpg" 
+            src="/profil/etudiant/etudiant1.jpg" 
             alt="Vendre votre bien avec Merci Immobilier" 
             fill 
             priority 
@@ -33,15 +33,15 @@ export default function Hero1() {
           {/* Contenu textuel avec couleurs adaptées au fond Slate-300 */}
           <div className="text-center md:text-left relative z-20 max-w-lg">
             <h1 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight tracking-wide mb-6">
-              Envie de rejoindre   <br />
-              <span className="font-pinyon text-5xl md:text-7xl  font-normal ">une communauté </span> <br />
-              différente dans l'immobilier ?
+              Spécial étudiant une <br />
+              <span className="font-pinyon text-5xl md:text-7xl  font-normal ">offre </span> <br />
+              extraordinaire !
             </h1>
             
             <p className="text-slate-700 text-lg md:text-xl mb-8 leading-relaxed">
-              Avec ou sans expérience dans l'immobilier, vivez sereinement de votre activité
+              Tu es étudiant et tu peux devenir conseiller immobilier Merci 
               <span className="block mt-4  text-slate-800">
-                Un conseiller Merci Immobilier est à votre disposition 
+                Un conseiller Merci est disponible pour te répondre
               </span>
             </p>
           </div>
