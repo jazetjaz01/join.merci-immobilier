@@ -13,15 +13,31 @@ const AddPostForm = () => {
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState<File | null>(null);
 
+
+const generateSlug = (text: string) => {
+  return text
+    .toLowerCase()
+    .normalize("NFD") // Supprime les accents
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^\w ]+/g, "") // Supprime les caractères spéciaux
+    .replace(/ +/g, "-"); // Remplace les espaces par des tirets
+};
+
+
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
     const formData = new FormData(e.currentTarget);
     const title = formData.get("title") as string;
+    const slug = generateSlug(title);
     const category = formData.get("category") as string;
     const author = formData.get("author") as string;
     const content = formData.get("content") as string; // Récupération du contenu
+
+
+
 
     try {
       let imageUrl = "";
@@ -50,7 +66,8 @@ const AddPostForm = () => {
           title,
           category,
           author_name: author,
-          content, // Ajout de la description ici
+          content, 
+          slug,
           image_url: imageUrl,
         },
       ]);
