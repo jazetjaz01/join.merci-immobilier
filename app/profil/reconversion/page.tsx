@@ -4,7 +4,7 @@ import Hero3 from "@/components/profil/etudiant/Hero3";
 import Hero4 from "@/components/profil/etudiant/Hero4";
 
 
-export default function Etudiant() {
+export default function Reconversion() {
   return (
     <div className="min-h-screen bg-slate-200 font-sans">
       
