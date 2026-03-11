@@ -11,12 +11,13 @@ import { Separator } from "@/components/ui/separator";
 
 const footerLinks = [
 
-  { title: "Estimation", href: "#" },
-  { title: "L'Agence", href: "#" },
-  { title: "Recrutement", href: "#" },
-  { title: "Contact", href: "contact" },
-  { title: "Mentions Légales", href: "mentions" },
-    { title: "Confidentialite", href: "confidentialite" },
+  { title: "Offre étudiant", href: "/profil/etudiant" },
+    { title: "Entreprendre", href: "/entreprendre" },
+  { title: "Actualité", href: "/actualite" },
+
+  { title: "Contact", href: "/contact" },
+  { title: "Mentions Légales", href: "/mentions" },
+    { title: "Confidentialite", href: "/confidentialite" },
 ];
 
 const Footer = () => {
@@ -79,7 +80,7 @@ const Footer = () => {
               <Link href="https://www.facebook.com/profile.php?id=61586237204759" className="hover:text-teal-200 transition-colors">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="#" className="hover:text-teal-200 transition-colors">
+              <Link href="https://www.linkedin.com/company/111123130" className="hover:text-teal-200 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link href="#" className="hover:text-teal-200 transition-colors">
