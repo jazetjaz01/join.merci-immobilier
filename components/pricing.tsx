@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
+import Link from "next/link"; // 1. Import de Link
 
 interface PricingPlan {
   name: string;
@@ -120,8 +121,11 @@ const PlanCard = ({ plan }: { plan: PricingPlan }) => {
           <p className="text-2xl font-bold text-primary">{plan.reversion}</p>
         </div>
 
-        <Button className="w-full mb-8" size="lg" variant={plan.isRecommended ? "default" : "outline"}>
-          Rejoindre le réseau
+        {/* 2. Utilisation de asChild pour le lien vers /rejoindre */}
+        <Button asChild className="w-full mb-8" size="lg" variant={plan.isRecommended ? "default" : "outline"}>
+          <Link href="/rejoindre">
+            Rejoindre le réseau
+          </Link>
         </Button>
         
         <ul className="space-y-3 flex-grow">

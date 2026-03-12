@@ -12,7 +12,7 @@ import { Separator } from "@/components/ui/separator";
 const footerLinks = [
 
   { title: "Offre étudiant", href: "/profil/etudiant" },
-    { title: "Entreprendre", href: "/entreprendre" },
+    { title: "Honoraires", href: "/honoraires" },
   { title: "Actualité", href: "/actualite" },
 
   { title: "Contact", href: "/contact" },
