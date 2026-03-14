@@ -1,7 +1,7 @@
-import Hero1 from "@/components/profil/etudiant/Hero1";
-import Hero2 from "@/components/profil/etudiant/Hero2";
-import Hero3 from "@/components/profil/etudiant/Hero3";
-import Hero4 from "@/components/profil/etudiant/Hero4";
+import Hero1 from "@/components/entreprendre/Hero1";
+import Hero2 from "@/components/entreprendre/Hero2";
+import Hero3 from "@/components/entreprendre/Hero3";
+import Hero4 from "@/components/entreprendre/Hero4";
 
 
 export default function Entreprendre() {

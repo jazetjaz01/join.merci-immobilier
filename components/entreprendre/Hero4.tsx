@@ -17,7 +17,7 @@ export default function Recrutement() {
             }}
           >
             <Image
-             src="/profil/professionnel/professionnel4.jpg" 
+             src="/entreprendre/entreprendre4.jpg" 
               alt="Rejoindre l'équipe Merci Immobilier" 
               fill 
               className="object-cover object-top scale-110" 
@@ -40,10 +40,10 @@ export default function Recrutement() {
 
             <div className="space-y-6 text-slate-700 text-lg leading-relaxed mb-10">
               <p className="font-semibold text-slate-900">
-                Tu as  le sens du service et l'envie d'entreprendre ? Merci Immobilier est à ton service.
+                Vous avez le sens du service et l'envie d'entreprendre ? Rejoignez le réseau Merci Immobilier.
               </p>
               <p>
-                Nous recherchons des agentsimmobiliers ou agents commerciaux passionnés qui partagent nos valeurs. Profitez d'un accompagnement personnalisé et d'outils performants au sein d'une équipe à taille humaine.
+                Nous recherchons des agents passionnés qui partagent nos valeurs. Profitez d'un accompagnement personnalisé et d'outils performants au sein d'une équipe à taille humaine.
               </p>
             </div>
 
