@@ -67,8 +67,8 @@ const Footer = () => {
             {/* Copyright Blanc avec signature Pinyon */}
             <span className="text-teal-100/80 text-sm font-medium">
               &copy; {new Date().getFullYear()}{" "}
-              <span className="font-pinyon text-2xl text-white">Merci</span> 
-              <span className="ml-1 text-white">Immobilier.</span>
+              <span className=" text-white">Merci</span> 
+              <span className="ml-1 text-white">Immobilier.Agence immobilière</span>
               {" "}Tous droits réservés.
             </span>
 

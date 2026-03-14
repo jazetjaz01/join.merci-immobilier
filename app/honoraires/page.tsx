@@ -21,7 +21,7 @@ const honorairesData = [
 
 export default function HonorairesPage() {
   return (
-    <main className="min-h-screen bg-slate-50 py-16 px-4">
+    <main className="min-h-screen bg-slate-200 py-16 px-4">
       <div className="max-w-4xl mx-auto">
         
         {/* En-tête de la page */}
